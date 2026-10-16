@@ -30,7 +30,7 @@ This approach sorts the numbers and uses two pointers, one at each end, moving t
 - **Space complexity:** Depends on the sorting implementation and whether extra storage is used.
 
 ## Approach 3: Hash Map (Expected / Optimized Approach)
-In programming, the primary purpose of using Maps and Sets in practical scenarios is to achieve a constant time complexity—O(1)—for lookup, insertion, and deletion operations.
+In programming, the primary purpose of using Maps and Sets in practical scenarios is to achieve a constant time complexity O(1) for lookup, insertion, and deletion operations.
 A hash map stores numbers already visited, along with their indices. This lets us look up the number needed to complete the target sum.
 
 For each number `current`, calculate its complement:
