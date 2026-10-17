@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;; 
+
+
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
         List<Integer> result = new ArrayList<>();
