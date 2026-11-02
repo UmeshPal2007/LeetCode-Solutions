@@ -1,4 +1,4 @@
-# Container With Most Water: Complete Logic in Java
+# Container With Most Water
 
 ## Problem statement
 
