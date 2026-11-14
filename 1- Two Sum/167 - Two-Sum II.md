@@ -1,19 +1,4 @@
 # LeetCode 167: Two Sum II
-## Problem statement
-
-Given a **1-indexed**, non-decreasing sorted integer array `numbers` and a target value, find two numbers whose sum equals the target. Return their indices as a two-element array `[index1, index2]` using **1-based indices**, with `index1 < index2`.
-
-The problem guarantees exactly one solution and that the same element cannot be used twice.
-
-Example:
-
-```text
-numbers = [2, 7, 11, 15]
-target = 9
-answer = [1, 2]
-```
-
-The values at 1-based positions 1 and 2 add up to 9.
 
 ## 1. Brute force approach
 

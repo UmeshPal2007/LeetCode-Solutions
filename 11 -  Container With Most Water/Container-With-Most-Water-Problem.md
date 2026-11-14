@@ -1,28 +1,4 @@
-# Container With Most Water
-
-## Problem statement
-
-Given an integer array `height`, where `height[i]` is the height of a vertical line at position `i`, choose two lines that, together with the x-axis, hold the most water. Return the maximum area.
-
-Find two lines that together with the x-axis form a container, such that the container contains the most water.
-Return the maximum amount of water a container can store.
-Notice that you may not slant the container.
-
-The area between lines at indices `left` and `right` is:
-
-```text
-width × height of the shorter line
-= (right - left) × min(height[left], height[right])
-```
-
-Example:
-
-```text
-height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
-maximum area = 49
-```
-
-The lines at indices `1` and `8` have width `7` and shorter height `7`, so their area is `7 × 7 = 49`.
+# 11 - Container With Most Water
 
 ## 1. Brute force approach
 

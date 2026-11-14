@@ -1,10 +1,4 @@
-# Subsets : Recursion and Backtracking
-
-## Problem statement
-
-Given an integer array `nums` with distinct values, return every possible subset (the power set). The result must include the empty subset and the original set. The order of subsets does not matter.
-
-There are `2ⁿ` subsets because each element has two choices: include it or exclude (leave it out).
+# Subsets
 
 ## Approach : Recursion and Backtracking
 Build one subset at a time. At each recursive call:

@@ -1,13 +1,4 @@
 # Remove Duplicates from Sorted Array 
-## Problem
-
-Given an integer array `nums` sorted in non-decreasing order, remove the
-duplicates **in-place** so that each unique element appears only once.
-
-Return the number of unique elements, `k`. The first `k` positions of
-`nums` must contain the unique elements in their original order.
-
-The elements after index `k - 1` do not matter.
 
 ## Intuition
 
@@ -24,7 +15,7 @@ element. Move `i` one step forward and copy `nums[j]` to `nums[i]`.
 
 At the end, the number of unique elements is `i + 1`.
 
-## Approach --- Two Pointers
+## Two Pointers Approach
 
 1.  If the array is empty, return `0`.
 2.  Start `i` at index `0`. It represents the last unique element's
@@ -77,17 +68,9 @@ class Solution {
     at `0`, so the count is one more than the final index.
 
 ## Complexity Analysis
+Time `O(n)` The array is scanned once.
 
-  -----------------------------------------------------------------------
-  Complexity              Result                  Reason
-  ----------------------- ----------------------- -----------------------
-  Time                    `O(n)`                  The array is scanned
-                                                  once.
-
-  Space                   `O(1)`                  Only two pointers are
-                                                  used; no extra array is
-                                                  created.
-  -----------------------------------------------------------------------
+Space `O(1)` Only two pointers are used; no extra array is created.
 
 ## Key Takeaways
 
@@ -97,8 +80,6 @@ class Solution {
 -   The solution modifies the original array in-place.
 -   Return the count `k`, not the modified array.
 
-**Pattern to remember:** Sorted Array + In-place Modification → Two
-Pointers.
 
 ``` java
 class Solution {

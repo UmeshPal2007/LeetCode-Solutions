@@ -1,21 +1,6 @@
 # Book Allocation Problem --- Allocate Minimum Pages
-## 1. Problem Statement
 
-You are given an array `pages[]`, where `pages[i]` is the number of
-pages in the `i-th` book, and an integer `m`, the number of students.
-
-Allocate all books subject to these rules:
-
-1.  Every student gets at least one book.
-2.  Each book is allocated to exactly one student.
-3.  Books must be allocated in **contiguous order**.
-4.  The maximum pages assigned to any student must be minimized.
-
-Return the minimum possible maximum number of pages assigned to a
-student. If `m > pages.length`, return `-1` because every student must
-receive a book.
-
-## 2. Intuition
+## Intuition
 
 Focus on the goal: **minimize the maximum pages assigned to one
 student**.
@@ -72,7 +57,7 @@ Therefore, search in:
 
 `[maximum book pages, total pages]`
 
-## 4. Approach --- Binary Search on Answer
+## 4. Approach - Binary Search on Answer
 
 1.  If there are no books, `m <= 0`, or `m > pages.length`, return `-1`.
 2.  Set `low` to the largest book and `high` to the sum of all pages.
@@ -148,12 +133,6 @@ class Solution {
     }
 }
 ```
-
-> **GeeksforGeeks signature note:** Some GFG versions expect
-> `static int findPages(int[] arr, int n, int m)`. The algorithm is
-> identical; adapt the method signature and return type to the
-> platform's required template. The `long` version above is safer when
-> page totals may exceed the `int` range.
 
 ## 6. Line-by-Line Explanation
 

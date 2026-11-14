@@ -1,8 +1,5 @@
 # Search in a Rotated Sorted Array
 
-## Problem statement
-A sorted array of distinct integers has been rotated at an unknown pivot. Given the rotated array `nums` and a `target`, return the target's index, or `-1` if it is not present.
-
 ## 1. Brute force approach: Linear search
 
 Check each element from left to right. Return its index if it equals the target; return `-1` after checking the entire array.

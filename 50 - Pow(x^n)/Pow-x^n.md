@@ -1,11 +1,6 @@
 # Pow(x^n)
 
-## Problem statement
-
-Implement `myPow(x, n)`, which calculates `x` raised to the integer power `n` (`xⁿ`). Return the result as a `double`.
-The important challenge is to avoid multiplying `x` by itself `|n|` times for large exponents.
-
-## 1. Brute force: multiply repeatedly
+## 1. Brute force: Multiply repeatedly
 
 Start with `result = 1`. Multiply by `x` once for every unit of the exponent's magnitude. For a negative exponent, return the reciprocal of the result.
 

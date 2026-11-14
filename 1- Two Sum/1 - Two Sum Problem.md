@@ -1,17 +1,6 @@
-# LeetCode 1: Two Sum Problem: Complete Logic
+# Complete Logic, Intuition and Approach
 
-## Problem statement
-
-Given an array of integers `nums` and an integer `target`, find the **indices of two distinct elements** whose values add up to `target`.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
-For example:
-```text
-nums   = [2, 7, 11, 15]
-target = 9
-```
-
-The answer is `[0, 1]`, because `nums[0] + nums[1] = 2 + 7 = 9`.
+# LeetCode 1: Two Sum Problem:
 
 ### 1. Brute force approach
 
@@ -34,7 +23,7 @@ static int[] twoSumBruteForce(int[] nums, int target) {
 - **Extra space:** `O(1)`.
 - **Use it when:** the input is small or you want the simplest solution.
 
-### 2. Better approach: sort and use two pointers
+### 2. Better approach: Sorting and Two Pointers
 
 Pair every number with its original index, then sort those pairs by number. Start one pointer at each end of the sorted array. If their sum is too small, move the left pointer right; if too large, move the right pointer left. Preserve original indices so the answer refers to the input array.
 
@@ -159,12 +148,3 @@ class Twosum {
     }
 }
 ```
-
-
-1. Pair Sum Problem (0:18 - 14:41)
-
-Objective: Find two numbers in a sorted array that sum up to a specific target.
-Brute Force: Uses a nested loop to check every possible pair, resulting in 
- time complexity (0:18).
-Optimal Approach: Utilizes a Two Pointer technique, where pointers start at both ends of the array and move inward based on the target sum comparison, achieving 
- linear time complexity (6:40).
