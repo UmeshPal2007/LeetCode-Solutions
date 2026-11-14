@@ -4,15 +4,6 @@ Given an integer array `nums`, return an array `answer` such that `answer[i]` is
 
 The solution must run in **O(n)** time. The usual challenge also asks for no division and O(1) extra space, excluding the output array.
 
-## Example
-
-```text
-Input:  nums = [1, 2, 3, 4]
-Output: [24, 12, 8, 6]
-```
-
-For example, at index `2`, the product of all values other than `nums[2]` is `1 × 2 × 4 = 8`.
-
 ## Key observation
 
 For any index `i`, split the product into two independent parts:

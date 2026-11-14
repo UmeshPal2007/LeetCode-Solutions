@@ -159,3 +159,12 @@ class Twosum {
     }
 }
 ```
+
+
+1. Pair Sum Problem (0:18 - 14:41)
+
+Objective: Find two numbers in a sorted array that sum up to a specific target.
+Brute Force: Uses a nested loop to check every possible pair, resulting in 
+ time complexity (0:18).
+Optimal Approach: Utilizes a Two Pointer technique, where pointers start at both ends of the array and move inward based on the target sum comparison, achieving 
+ linear time complexity (6:40).
